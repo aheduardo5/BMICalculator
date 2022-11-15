@@ -3,6 +3,7 @@
   height: 130px;
   border-radius: 20px;
   margin-bottom: 20px;
+  overflow: hidden;
 }
 
 .btn-color {
@@ -20,6 +21,14 @@
     font-size: 40px;
 }
 
+.contenedorSexo{
+  cursor: pointer;
+}
+.contenedorSexo:hover{
+  background-color: #e00f1328;
+  border-radius: 20px;
+  transition: 300ms;
+}
 .estiloNumero{
     font-size: 40px;
     font-weight: 800;
@@ -45,4 +54,7 @@ input[type=range]::-webkit-slider-thumb{
     padding: 5px;
     border-radius: 50%;
     margin: 0 5px;
+}
+.sexoDesactivo{
+  background-color: #da4a4a8a;
 }

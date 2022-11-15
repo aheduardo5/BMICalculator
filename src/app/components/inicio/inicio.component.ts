@@ -11,6 +11,7 @@ export class InicioComponent implements OnInit {
   alturaMin = 0;
   alturaMax = 250;
   altura = 50;
+  sexo = 'Masculino';
   constructor() {}
 
   ngOnInit(): void {}
@@ -18,5 +19,12 @@ export class InicioComponent implements OnInit {
   cambiarAltura(event: any) {
     console.log(event);
     this.altura = event.target.value;
+  }
+
+  masculino(){
+    this.sexo = 'Masculino';
+  }
+  femenino(){
+    this.sexo = 'Femenino';
   }
 }

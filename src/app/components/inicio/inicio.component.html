@@ -5,7 +5,11 @@
     <div class="row">
       <div class="col-lg-6">
         <div class="fondoItem">
-          <div class="contenedor">
+          <div
+            class="contenedor contenedorSexo"
+            (click)="masculino()"
+            [ngClass]="{ sexoDesactivo: sexo === 'Masculino' }"
+          >
             <i class="fa-solid fa-mars sexo"></i>
             <p>Male</p>
           </div>
@@ -13,7 +17,11 @@
       </div>
       <div class="col-lg-6">
         <div class="fondoItem">
-          <div class="contenedor">
+          <div
+            class="contenedor contenedorSexo"
+            (click)="femenino()"
+            [ngClass]="{ sexoDesactivo: sexo === 'Femenino' }"
+          >
             <i class="fa-solid fa-venus sexo"></i>
             <p>Female</p>
           </div>
@@ -27,8 +35,17 @@
         <div class="fondoItem">
           <div class="contenedor">
             <p>Altura</p>
-            <div class="estiloNumero">{{altura}} <span class="cm">cm</span></div>
-            <input (input)="cambiarAltura($event)" [value]="altura" type="range" class="form-range" [min]="alturaMin" [max]="alturaMax" />
+            <div class="estiloNumero">
+              {{ altura }} <span class="cm">cm</span>
+            </div>
+            <input
+              (input)="cambiarAltura($event)"
+              [value]="altura"
+              type="range"
+              class="form-range"
+              [min]="alturaMin"
+              [max]="alturaMax"
+            />
           </div>
         </div>
       </div>
