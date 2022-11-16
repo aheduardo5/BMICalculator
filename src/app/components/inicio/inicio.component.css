@@ -6,17 +6,6 @@
   overflow: hidden;
 }
 
-.btn-color {
-  background-color: #ff3366;
-  border-color: #ff3366;
-  border-radius: 25px;
-  width: 100%;
-}
-.btn-color:hover {
-  background-color: #ff94af;
-  border-color: #ff94af;
-  transition: 300ms;
-}
 .sexo{
     font-size: 40px;
 }

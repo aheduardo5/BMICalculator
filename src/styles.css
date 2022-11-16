@@ -1,20 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
-body{
-    background-color: #0A0E21;
-    color: white;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
+body {
+  background-color: #0a0e21;
+  color: white;
+  margin: 0px 20px;
 }
 
-.titulo{
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    margin-top: 25px;
+.titulo {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  margin-top: 25px;
 }
 
-.contenedor{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    flex-direction: column;
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+}
+.btn-color {
+  background-color: #ff3366;
+  border-color: #ff3366;
+  border-radius: 25px;
+  width: 100%;
+}
+.btn-color:hover {
+  background-color: #ff94af;
+  border-color: #ff94af;
+  transition: 300ms;
 }
