@@ -18,7 +18,6 @@ export class InicioComponent implements OnInit {
   ngOnInit(): void {}
 
   cambiarAltura(event: any) {
-    console.log(event);
     this.altura = event.target.value;
   }
 
@@ -29,6 +28,7 @@ export class InicioComponent implements OnInit {
     this.sexo = 'Femenino';
   }
   calcularBMI() {
-    this.router.navigate(['/resultado']);
+    const BMI = this.peso / Math.pow(this.altura/100,2);
+    this.router.navigate(['/resultado', BMI.toFixed(1)]);
   }
 }
